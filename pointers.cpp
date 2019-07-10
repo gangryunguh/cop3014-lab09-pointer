@@ -14,8 +14,8 @@ int main()
 	int width;	// holds width 
 	int area;	// holds area
 
-	int *lengthPtr = nullptr;	// int pointer which will be set to point to length 
-	int *widthPtr = nullptr;	// int pointer which will be set to point to width
+	int *lengthPtr = &length;	// int pointer which will be set to point to length
+	int *widthPtr = &width;	// int pointer which will be set to point to width
 
 	cout << "Please input the length of the rectangle" << endl;
 	cin >> length;
@@ -27,14 +27,14 @@ int main()
 
 	// Fill in code to make widthPtr point to width (hold its address)
 
-	area =	// Fill in code to find the area by using only the pointer variables
+	area =	*lengthPtr * *widthPtr; // Fill in code to find the area by using only the pointer variables
 
 	cout << "The area is " << area << endl;
 
-	if (// Fill in the condition length > width by using only the pointer variables)
+	if (*lengthPtr > *widthPtr) // Fill in the condition length > width by using only the pointer variables)
 		cout << "The length is greater than the width" << endl;
 
-	else if (// Fill in the condition of width > length by using only the pointer variables)
+	else if (*widthPtr > *lengthPtr) // Fill in the condition of width > length by using only the pointer variables)
 		cout << "The width is greater than the length" << endl;
 
 	else
