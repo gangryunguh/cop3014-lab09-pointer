@@ -18,11 +18,11 @@ int main()
     cout  << "The second grade is "  // The same is done for the other
           <<  *(grades + 1) << endl; // elements of the array.In
     cout  << "The third grade is "   // each case, pointer arithmetic
-             *(grades + 2) << endl;  // gives us the address of the
+          <<  *(grades + 2) << endl; // gives us the address of the
     cout  << "The fourth grade is "  // next array element. Then the
-             *(grades + 3) << endl;  // indirection operator * gives
+          << *(grades + 3) << endl;  // indirection operator * gives
     cout  << "The fifth grade is "   // us the value of what is stored
-             *(grades + 4) << endl;  // at that address.
+          << *(grades + 4) << endl;  // at that address.
 
     return 0;
 }
